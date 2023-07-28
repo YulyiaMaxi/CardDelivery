@@ -23,7 +23,7 @@ public class CardDeliveryTest {
         $("[data-test-id = date] input").sendKeys (Keys.chord(Keys.SHIFT, Keys.HOME, Keys.DELETE)); //удаляем текущую дату с сайта, кторая стоит по умолчанию
        String currentDate = generateDate (4, "dd.MM.yyyy"); //задаем переменную с нужными параметрами
         $("[data-test-id = date] input").sendKeys(currentDate); // заполняем поле "Дата" текущей датой. Использовать setValue не можем, тк это не хардкод
-        $("[data-test-id = name] input").setValue("Julia Максимова");
+        $("[data-test-id = name] input").setValue("Юлия Максимова");
         $("[data-test-id = phone] input").setValue("+79166065820");
         $("[data-test-id = agreement]").click();
         $(".button").click();
